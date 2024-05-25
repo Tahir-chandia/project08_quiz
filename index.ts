@@ -15,16 +15,8 @@ let user= await inquirer.prompt({
 
 console.log(chalk.bold.yellow(`\nWelcome ${user.name}\n`));
 
-let start= await inquirer.prompt(
-    {
-        name:"quiz",
-        type:"confirm",
-        default:false,
-        message:"Do you want to Start Quiz ?"
-    }
-)
 
-if(start.quiz==true){
+
 
 
 
@@ -112,6 +104,4 @@ if(start.quiz==true){
     
     console.log(`\nDear ${chalk.bold.green(user.name)}, Your gained ${chalk.bold.green(score)} out of 5`);
     
-
-}
 
